@@ -7,7 +7,6 @@ import reportWebVitals from './reportWebVitals';
 
 import Art from './art';
 import Projects from './projects';
-import Favorites from './favorites';
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +17,6 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/art" element={<Art />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/favorites" element={<Favorites />} />
     </Routes>
   </BrowserRouter>
 );

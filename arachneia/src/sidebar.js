@@ -18,9 +18,10 @@ function Sidebar() {
         </button>
         <nav>
           <ul>
+            <li><h2>Home</h2></li>
             <li><Link to="/art" onClick={toggleSidebar}>Art</Link></li>
             <li><Link to="/projects" onClick={toggleSidebar}>Projects</Link></li>
-            <li><Link to="/favorites" onClick={toggleSidebar}>Favorites</Link></li>
+            <li></li>
           </ul>
         </nav>
       </div>
