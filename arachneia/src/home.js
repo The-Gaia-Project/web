@@ -1,8 +1,12 @@
+import './main.css'
 export default function Home () {
     return(
         <>
+            <header>
+                text
+            </header>
             <dic>
-                <p>testing testing</p>
+                
             </dic>
         </>
     )
