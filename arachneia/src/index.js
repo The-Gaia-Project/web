@@ -1,12 +1,26 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './home';
 import reportWebVitals from './reportWebVitals';
+
+import Art from './art';
+import Projects from './projects';
+import Favorites from './favorites';
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <Home />
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/art" element={<Art />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/favorites" element={<Favorites />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
