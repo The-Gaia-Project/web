@@ -13,6 +13,40 @@ export default function Art () {
         <>
             <Header />
             <Sidebar />
+            <div class="row">
+                <div class="imagebox">
+                    <div class="box-text" >
+                        <h2 >Filler text</h2>{/* do not use more then 45 letters */}
+                    </div>
+                </div>
+                <div class="imagebox" >
+                    <div class="box-text" >
+                        <h2>Filler text</h2>{/* do not use more then 45 letters */}
+                    </div>
+                </div>
+                <div class="imagebox" >
+                    <div class="box-text" >
+                        <h2>Filler text</h2>{/* do not use more then 45 letters */}
+                    </div>
+                </div>
+            </div>{/* end of row */}
+            <div class="row">
+                <div class="imagebox">
+                    <div class="box-text" >
+                        <h2 >Filler text</h2>{/* do not use more then 45 letters */}
+                    </div>
+                </div>
+                <div class="imagebox" >
+                    <div class="box-text" >
+                        <h2>Filler text</h2>{/* do not use more then 45 letters */}
+                    </div>
+                </div>
+                <div class="imagebox" >
+                    <div class="box-text" >
+                        <h2>Filler text</h2>{/* do not use more then 45 letters */}
+                    </div>
+                </div>
+            </div>{/* end of row */}
             <Footer />
         </>
     )

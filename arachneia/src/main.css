@@ -168,7 +168,7 @@ footer{
 
 .banner {
     width: 80%;
-    height: 700px;
+    /* height: 40rem; */ /* Comment out or remove */
     margin: auto;
     margin-top: 20px;
     overflow: hidden;
@@ -176,11 +176,15 @@ footer{
     border-radius: 50px;
     box-shadow: gray 0px 0px 0px 2px;
 }
+
 .LogoHeader{
     width: 100px;
     height: 100px;
     /* scale: 100px; */
     overflow: hidden;
+    margin: auto;
+    text-align: center;
+    background-color: transparent;
 }
 .Logo{
     margin-top: 5px;
@@ -188,6 +192,23 @@ footer{
     height: 80px;
     border: solid white;
     border-radius: 100%;
+}
+.Profile{
+    margin-top: 5px;
+    width: 80px;
+    height: 80px;
+    border: solid white;
+    border-radius: 100%;
+}
+.ProfileHeader{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+.Logo:hover{
+    box-shadow: white 0 0 5px 1px;
 }
 .header-text{
     width: 100%;
@@ -211,4 +232,66 @@ footer{
 }
 .ToggleButton:hover{
     color: lightgray;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.imagebox {
+    width: 30vw; /* Set width relative to viewport width */
+    height: 30vw; /* Set height the same as width to maintain 1:1 aspect ratio */
+    text-align: end;
+    border: solid gray 1px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: 0.1s;
+}
+.imagebox:hover{
+    border: solid white 1px;
+}
+@media (min-width: 1200px) {
+    .imagebox {
+        width: 360px; /* Fixed size */
+        height: 360px; /* Fixed size */
+    }
+}
+.box-text{
+    padding: 0px 10px 0 10px;
+    background-color: #1d1d1d;
+    border: transparent;
+    border-left: solid gray 1px;
+    border-top: solid gray 1px;
+    border-radius: 50px 0 0 0;
+    transition: 0.1s;
+    width: fit-content;
+}
+.RowBox{
+    border-bottom: solid gray 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#NameForBox{
+    color: lightgray;
+    border-bottom: solid gray 1px;
+    width: 20%;
+    align-self: center;
+}
+#NameForBox:hover{
+    color: white;
+}
+#Date{
+    margin-top: 0px;
+    font-size: 10px;
+}
+#ImageTittle{
+    margin-bottom: 0px;
 }

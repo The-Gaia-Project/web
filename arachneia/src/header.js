@@ -1,4 +1,5 @@
-import Logo from "./logo.png"
+import Logo from "./logo.png";
+import Profile from './Gaia.png';
 import { Link } from 'react-router-dom';
 export default function Header() {
     return (
@@ -8,6 +9,9 @@ export default function Header() {
             </div>
             <div className="header-text">
                 <h1>Arachneia</h1>
+            </div>
+            <div className="ProfileHeader">
+                <img src={Profile} alt="Profile" className="Profile"/>
             </div>
         </header>
     );

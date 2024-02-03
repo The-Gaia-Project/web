@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+
 import Header from './header';
 import Footer from './footer';
 import Sidebar from './sidebar';
@@ -22,14 +23,36 @@ export default function Home() {
     // Calculate nextImageIndex based on currentImageIndex for seamless transitions
     const nextImageIndex = (currentImageIndex + 1) % imageData.length;
 
+    const bannerRef = useRef(null); // Ref for the banner div
+
+    useEffect(() => {
+        // Existing useEffect logic
+    }, []);
+
+    const updateBannerHeight = () => {
+        if (bannerRef.current) {
+            const currentImg = bannerRef.current.querySelector('.HomeImage:not(.next)');
+            if (currentImg) {
+                const height = currentImg.offsetHeight;
+                bannerRef.current.style.height = `${height}px`;
+            }
+        }
+    };
+
+    useEffect(() => {
+        const img = new Image();
+        img.onload = updateBannerHeight;
+        img.src = imageData[currentImageIndex].url;
+    }, [currentImageIndex]);
+    
+    // Component return and JSX logic remains unchanged, except for adding ref to banner div
     return (
         <>
             <Header />
             <Sidebar />
-            <div className="banner">
-                {/* Adjust the key prop to force re-render and restart the animation */}
-                <img src={imageData[currentImageIndex].url} alt="Current" className="HomeImage slide" key={currentImageIndex} />
-                <img src={imageData[nextImageIndex].url} alt="Next" className="HomeImage slide next" key={nextImageIndex} />
+            <div className="banner" ref={bannerRef}>
+                <img src={imageData[currentImageIndex].url} alt="Current" className="HomeImage slide" key={currentImageIndex} onLoad={updateBannerHeight} />
+                <img src={imageData[nextImageIndex].url} alt="Next" className="HomeImage slide next" key={nextImageIndex} onLoad={updateBannerHeight} />
             </div>
 
             <div className="main-content">

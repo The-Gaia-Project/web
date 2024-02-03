@@ -5,7 +5,7 @@ import './index.css';
 import Home from './home';
 import reportWebVitals from './reportWebVitals';
 
-import Art from './art';
+import ArtHome from './art/art-home';
 import Projects from './projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +14,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/art" element={<Art />} />
+      <Route path="/art/art-home" element={<ArtHome />} />
       <Route path="/projects" element={<Projects />} />
     </Routes>
   </BrowserRouter>

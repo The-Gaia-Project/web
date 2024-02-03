@@ -16,10 +16,11 @@ export default function Sidebar() {
     // Define favorite URLs
     const links = {
       art: [
-          { name: 'Digital Art', url: '/art/digital-art-page-1' },
-          { name: 'Art', url: '/art' },
-          { name: '3D', url: '/art/3d-page-1' },
-          // Add more art links as needed
+        { name: 'Art Home', url: '/art/art-home' },
+        { name: 'Digital Art', url: '/art/digital-art' },
+        { name: 'Physical art', url: '/art/physical-art' },
+        { name: '3D', url: '/art/3d' },
+        // Add more art links as needed
       ],
       projects: [
           { name: 'Project Link 1', url: '/projects/link1' },
