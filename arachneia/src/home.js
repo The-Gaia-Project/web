@@ -14,7 +14,7 @@ export default function Home() {
         const interval = setInterval(() => {
             // Update currentImageIndex to the next image, cycling back to 0 at the end of the array
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageData.length);
-        }, 3000); // Ensure this timing matches with CSS animations for smooth transitions
+        }, 10000); // Ensure this timing matches with CSS animations for smooth transitions
 
         return () => clearInterval(interval);
     }, []); // Removed nextImageIndex from dependency array to avoid unnecessary re-renders
