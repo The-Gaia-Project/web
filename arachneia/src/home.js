@@ -5,6 +5,9 @@ import Sidebar from './sidebar';
 import imageData from './images.json';
 
 export default function Home() {
+    useEffect(() => {
+        document.title = "Arachneia - Home";
+      }, []);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
