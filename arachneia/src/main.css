@@ -223,13 +223,13 @@ footer{
 .imagebox {
     width: 30vw; /* Set width relative to viewport width */
     height: 30vw; /* Set height the same as width to maintain 1:1 aspect ratio */
-    text-align: end;
+    text-align: flex-end;
     border: solid gray 1px;
     margin: 20px;
     position: relative;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     background-color: #000;
     overflow: hidden;
     border-radius: 30px;
