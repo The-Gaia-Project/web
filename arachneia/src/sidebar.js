@@ -17,14 +17,13 @@ export default function Sidebar() {
     const links = {
       art: [
         { name: 'Art Home', url: '/art/art-home' },
-        { name: 'Digital Art', url: '/art/digital-art' },
         { name: 'Physical art', url: '/art/physical-art' },
+        { name: 'Digital Art', url: '/art/digital-art' },
         { name: '3D', url: '/art/3d' },
         // Add more art links as needed
       ],
       projects: [
-          { name: 'Project Link 1', url: '/projects/link1' },
-          { name: 'Project Link 2', url: '/projects/link2' },
+          { name: 'Projects', url: '/projects/projects-home' },
           // Add more project links as needed
       ],
       favorites: [
@@ -87,7 +86,7 @@ export default function Sidebar() {
                           </div>
                       )}
                   </li>
-                  {/* <li>
+                  <li>
                       <button onClick={toggleProjects}>Projects</button>
                       {isProjectsOpen && (
                           <div>
@@ -98,7 +97,7 @@ export default function Sidebar() {
                               ))}
                           </div>
                       )}
-                  </li> */}
+                  </li>
                   <li>
                       <button onClick={toggleFavorites} className='ToggleButton'>Favorites</button>
                       {isFavoritesOpen && (

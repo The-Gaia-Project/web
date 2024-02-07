@@ -4,9 +4,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './home';
 import reportWebVitals from './reportWebVitals';
-
 import ArtHome from './art/art-home';
-import Projects from './projects';
+import Projects from './projects/projects-home';
+import PhysicalArt from './art/physical-art';
+import DigitalArt from './art/digital-art';
+import ThreeD from './art/3d';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -15,7 +17,10 @@ root.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/art/art-home" element={<ArtHome />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="/art/physical-art" element={<PhysicalArt />} />
+      <Route path="/art/digital-art" element={<DigitalArt />} />
+      <Route path="/art/3d" element={<ThreeD />} />
+      <Route path="/projects/projects-home" element={<Projects />} />
     </Routes>
   </BrowserRouter>
 );
