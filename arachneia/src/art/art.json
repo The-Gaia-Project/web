@@ -1,0 +1,42 @@
+[
+    {
+        "category": "Physical Art",
+        "showMorePath": "./physical-art",
+        "images": [
+            {
+            "id": "10000",
+            "title": "Physical Art 1",
+            "date": "00.00.2000",
+            "path": "https://github.com/The-Gaia-Project/Images/blob/main/GaiaHAlfine.png?raw=true",
+            "previewUrl": "https://github.com/The-Gaia-Project/Images/blob/main/PreView/placeholder.png?raw=true"
+            }
+        ]
+    },
+    {
+        "category": "Digital Art",
+        "showMorePath": "./digital-art",
+        "images": [
+            {
+                "id": "20000",
+                "title": "Digital Artwork 1",
+                "date": "03.03.2021",
+                "path": "https://github.com/The-Gaia-Project/Images/blob/main/GaiaHAlfine.png?raw=true",
+                "previewUrl": "https://github.com/The-Gaia-Project/Images/blob/main/PreView/placeholder.png?raw=true"
+            }
+        ]
+    },
+    {
+        "category": "3D Art",
+        "showMorePath": "./3d",
+        "images": [
+            {
+                "id": "30000",
+                "title": "3D Artwork 1",
+                "date": "03.03.2021",
+                "path": "https://github.com/The-Gaia-Project/Images/blob/main/GaiaHAlfine.png?raw=true",
+                "previewUrl": "https://github.com/The-Gaia-Project/Images/blob/main/PreView/placeholder.png?raw=true"
+            }
+        ]
+    }
+]
+  

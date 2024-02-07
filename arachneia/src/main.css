@@ -248,13 +248,14 @@ footer{
 }
 .box-text{
     padding: 0px 10px 0 10px;
-    background-color: #1d1d1d;
+    background-color: #1d1d1d99;
     border: transparent;
     border-left: solid gray 1px;
     border-top: solid gray 1px;
     border-radius: 50px 0 0 0;
     transition: 0.1s;
     width: fit-content;
+    position:absolute ;
 }
 .RowBox{
     border-bottom: solid gray 1px;
@@ -282,21 +283,49 @@ footer{
 }
 ::-webkit-scrollbar {
     width: 20px;
-  }
-  ::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
     background: #333;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
     background-color: #222;
     border-radius: 6px;
     border: 3px solid #333;
-  }
-  ::-webkit-scrollbar-button{
+}
+::-webkit-scrollbar-button{
     background-color: #222;
     border-radius: 6px;
     border: 3px solid #333;
-  }
-
+}
+#ImageLink{
+    color: white;
+    text-decoration: none; 
+}
+#ShowMore{
+    border: transparent;
+    background-color: transparent;
+    color: white;
+    font-size: x-large;
+    padding-bottom: 10px;
+    opacity: 0.5;
+    transition: 0.1s;
+}
+#ShowMore:hover{
+    opacity: 1;
+}
+.image-preview {
+    width: 100%; /* Adjust as necessary */
+    height: auto; /* Adjust as necessary */
+    object-fit: cover; /* This ensures the images cover the area nicely */
+    position: absolute;
+}
+.ImagePageImage{
+    text-align: center;
+}
+#ImagePageImage{
+    max-width: 100%;
+}
+  
     @media (max-width: 750px) {
         .main-content{
             display: flex;

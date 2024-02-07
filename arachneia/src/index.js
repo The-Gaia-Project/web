@@ -9,6 +9,7 @@ import Projects from './projects/projects-home';
 import PhysicalArt from './art/physical-art';
 import DigitalArt from './art/digital-art';
 import ThreeD from './art/3d';
+import ArtPage from './art/ArtPage'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,6 +22,7 @@ root.render(
       <Route path="/art/digital-art" element={<DigitalArt />} />
       <Route path="/art/3d" element={<ThreeD />} />
       <Route path="/projects/projects-home" element={<Projects />} />
+      <Route path="/art/ArtPage/:id" element={<ArtPage />} />
     </Routes>
   </BrowserRouter>
 );

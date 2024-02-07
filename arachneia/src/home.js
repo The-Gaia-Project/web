@@ -8,26 +8,27 @@ import imageData from './images.json';
 export default function Home() {
     useEffect(() => {
         document.title = "Arachneia - Home";
-      }, []);
+    }, []);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            // Update currentImageIndex to the next image, cycling back to 0 at the end of the array
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageData.length);
-        }, 10000); // Ensure this timing matches with CSS animations for smooth transitions
+        }, 10000);
 
         return () => clearInterval(interval);
-    }, []); // Removed nextImageIndex from dependency array to avoid unnecessary re-renders
+    }, []);
 
-    // Calculate nextImageIndex based on currentImageIndex for seamless transitions
     const nextImageIndex = (currentImageIndex + 1) % imageData.length;
 
-    const bannerRef = useRef(null); // Ref for the banner div
+    const bannerRef = useRef(null);
 
     useEffect(() => {
-        // Existing useEffect logic
-    }, []);
+        updateBannerHeight(); // Call updateBannerHeight on component mount
+        const interval = setInterval(updateBannerHeight, 1); // Update banner height every second
+
+        return () => clearInterval(interval); // Cleanup interval on component unmount
+    }, [currentImageIndex]); // Re-run effect when currentImageIndex changes
 
     const updateBannerHeight = () => {
         if (bannerRef.current) {
@@ -44,8 +45,7 @@ export default function Home() {
         img.onload = updateBannerHeight;
         img.src = imageData[currentImageIndex].url;
     }, [currentImageIndex]);
-    
-    // Component return and JSX logic remains unchanged, except for adding ref to banner div
+
     return (
         <>
             <Header />
@@ -60,9 +60,9 @@ export default function Home() {
                     <h2>About me!</h2>
                     <ul>
                         <li>I am 23 years old.</li><br/>
-                        <li>My dream is to become a robotic engeneer, or a game develuper.</li><br/>
+                        <li>My dream is to become a robotic engineer, or a game developer.</li><br/>
                         <li>I mod and create games for fun in my free time.</li><br/>
-                        <li>I have also started do make programs in python for fun.</li><br/>
+                        <li>I have also started to make programs in python for fun.</li><br/>
                     </ul>
                 </div>
                 <div className="content">

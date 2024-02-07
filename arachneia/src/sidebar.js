@@ -67,53 +67,49 @@ export default function Sidebar() {
                 <button onClick={toggleSidebar} className="toggle-btn">
                     {isOpen ? <h2>X</h2> : <h2>≡</h2>}
                 </button>
-
-
-
-
-          <nav>
-              <ul>
-                  <li><h2>Home</h2></li>
-                  <li>
-                      <button onClick={toggleArt} className='ToggleButton'>Art</button>
-                      {isArtOpen && (
-                          <div>
-                              {links.art.map(link => (
-                                  <div key={link.name}>
-                                      <Link to={link.url} onClick={toggleSidebar} className='ToggleButton'>{link.name}</Link>
-                                  </div>
-                              ))}
-                          </div>
-                      )}
-                  </li>
-                  <li>
-                      <button onClick={toggleProjects}>Projects</button>
-                      {isProjectsOpen && (
-                          <div>
-                              {links.projects.map(link => (
-                                  <div key={link.name}>
-                                      <Link to={link.url} onClick={toggleSidebar}>{link.name}</Link>
-                                  </div>
-                              ))}
-                          </div>
-                      )}
-                  </li>
-                  <li>
-                      <button onClick={toggleFavorites} className='ToggleButton'>Favorites</button>
-                      {isFavoritesOpen && (
-                          <div>
-                              {links.favorites.map(link => (
-                                  <div key={link.name}>
-                                      <Link to={link.url} target="_blank" onClick={toggleSidebar} className='ToggleButton'>{link.name}</Link>
-                                  </div>
-                              ))}
-                          </div>
-                      )}
-                  </li>
-              </ul>
-          </nav>
-      </div>
-  </>
+            <nav>
+                <ul>
+                    <li><h2>Home</h2></li>
+                    <li>
+                        <button onClick={toggleArt} className='ToggleButton'>Art</button>
+                        {isArtOpen && (
+                            <div>
+                                {links.art.map(link => (
+                                    <div key={link.name}>
+                                        <Link to={link.url} onClick={toggleSidebar} className='ToggleButton'>{link.name}</Link>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </li>
+                    <li>
+                        <button onClick={toggleProjects}>Projects</button>
+                        {isProjectsOpen && (
+                            <div>
+                                {links.projects.map(link => (
+                                    <div key={link.name}>
+                                        <Link to={link.url} onClick={toggleSidebar}>{link.name}</Link>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </li>
+                    <li>
+                        <button onClick={toggleFavorites} className='ToggleButton'>Favorites</button>
+                        {isFavoritesOpen && (
+                            <div>
+                                {links.favorites.map(link => (
+                                    <div key={link.name}>
+                                        <Link to={link.url} target="_blank" onClick={toggleSidebar} className='ToggleButton'>{link.name}</Link>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </>
 );
 }
 
