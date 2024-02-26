@@ -5,7 +5,7 @@ export default function Footer() {
             <div className="footer-content">
                 <h2>social media</h2>
                 <ul>
-                    <li><a href="https://github.com/The-Gaia-Project" target="_blank" className="URL_Links">Github</a></li>
+                    <li><a href="https://github.com/GaiaAlfine" target="_blank" className="URL_Links">Github</a></li>
                     <li><a href="https://www.sololearn.com/en/profile/10634469" target="_blank" className="URL_Links">SoloLearn</a></li>
                 </ul>
             </div>
