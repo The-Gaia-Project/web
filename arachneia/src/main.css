@@ -1,19 +1,9 @@
-/* body, div, header,footer{
-    border: solid yellow;
-} */
 body{
     font-family: Arial, sans-serif;
     background-color: #3d3d3d;
     color: white;
 }
-header{
-    display: flex;
-    padding: 20px;
-    background-color: #333333;
-    border-bottom: solid gray 1px;
-    z-index: 2000;
-    position: relative; /* Add this line */
-}
+
 .main-content{
     display: flex;
     flex-direction: row;
@@ -50,63 +40,6 @@ footer{
     border-left:  solid white 1px;
     height: auto;
     box-shadow: white -20px 0px 20px -30px;
-}
-.sidebar {
-    position: fixed; /* or 'absolute' if you want it to scroll with the page */
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1000;
-    width: 250px;
-    background-color: #313131;
-    transition: transform 0.3s ease;
-    border-right: gray;
-    padding-left: 10px;
-    border-right: solid gray 1px;
-}
-.sidebar.closed {
-    transform: translateX(-100%);
-}
-
-.toggle-btn {
-    position: absolute;
-    top: 0px;
-    right: -50px; /* Adjust based on your styling */
-    cursor: pointer;
-}
-
-/* Adjust styles for open state as needed */
-.sidebar.open .toggle-btn {
-    right: -50px; /* Keep the button with the sidebar */
-}
-.toggle-btn{
-    transition: 0.1s;
-    background-color: #313131;
-    color: white;
-    height: 50px;
-    width: 50px;
-    border: transparent;
-    border-radius: 0px 0px 20px 0px;
-    border-right: solid gray 1px;
-    border-bottom: solid gray 1px;
-}
-.toggle-btn:hover{
-    background-color: #444444;
-}
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 40px; /* Adjust based on button size */
-    background-color: #313131;
-    border-right: gray;
-}
-
-.sidebar ul li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color:white;
-    background-color: #313131;
 }
 .HomeImage {
     width: 100%;
@@ -160,59 +93,10 @@ footer{
     border-radius: 50px;
     box-shadow: gray 0px 0px 0px 2px;
 }
-
-.LogoHeader{
-    width: 100px;
-    height: 100px;
-    /* overflow: hidden; */
-    margin: auto;
-    text-align: center;
-    background-color: transparent;
-}
-.Logo{
-    margin-top: 5px;
-    width: 80px;
-    height: 80px;
-    border: solid white;
-    border-radius: 100%;
-}
-.Profile{
-    margin-top: 5px;
-    width: 80px;
-    height: 80px;
-    border: solid white;
-    border-radius: 100%;
-}
-.ProfileHeader{
-    width: 100px;
-    height: 100px;
-    /* overflow: hidden; */
-    margin: auto;
-    text-align: center;
-}
-.Logo:hover{
-    box-shadow: white 0 0 5px 1px;
-}
-.header-text{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
 .URL_Links{
     color: white;
 }
-.sidebar ul li button {
-    background: none;
-    border: none;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-}
 
-.sidebar ul li div {
-    padding-left: 20px;
-}
 .ToggleButton:hover{
     color: lightgray;
 }

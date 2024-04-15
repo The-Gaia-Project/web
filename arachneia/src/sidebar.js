@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import './main.css';
+import './css/sidebar.css';
 
 export default function Sidebar() {
     // State to manage sidebar and collapsible sections visibility
