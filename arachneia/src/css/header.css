@@ -13,8 +13,8 @@ header{
     margin-top: 5px;
     height: 80px;
     opacity: 80%;
+    transition: 0.3s;
 }
-
 .Logo:hover{
     opacity: 100%;
 }
