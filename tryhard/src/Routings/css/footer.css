@@ -1,0 +1,44 @@
+footer{
+    border-top: solid gray 1px;
+    background-color: #030021;
+    display: flex;
+    color: white;
+}
+.logobox{
+    width: 70%;
+    margin: auto 10px auto 10px;
+}
+.footbox_sosals{
+    margin: auto 10px auto 10px;
+}
+#DownBad{
+    height: 100px;
+    opacity: 80%;
+    transition: 0.3s;
+}
+#DownBad:hover{
+    opacity: 100%;
+}
+.sosals_image{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border: solid white 1px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.sosals_image:hover{
+    background-color: gray;
+    border:  solid gray 1px;
+}
+#sosalmedia{
+    text-align: center;
+    width:100%;
+}
+.contacts{
+    padding-right: 20px;
+    text-align: end;
+    width: 30%;
+}

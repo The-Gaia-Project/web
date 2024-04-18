@@ -1,0 +1,55 @@
+div{
+    border: solid wheat 1px;
+    padding: 20px;
+}
+.PageBox{
+    display: flex;
+    flex-direction: column;
+}
+.HomeImagebox{
+    position: relative;
+    width: fit-content;
+}
+img {
+    display: block; /* This removes the bottom space/gap under the image */
+    width: 100%; /* Adjust as necessary */
+    height: auto; /* Adjust as necessary */
+    border-radius: 25px;
+  }
+.HomeTextBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+.TextBoxHomeImage{
+
+}
+.ArtBox{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+.ArtTextBox{
+    width: 50%;
+    
+}
+.ArtImageBox{
+    width: 50%;
+
+}
+.ProjectBox{
+    display: flex;
+}
+.ProjcetImageBox{
+
+}
+.ProjectTextBox{
+
+}
