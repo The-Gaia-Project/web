@@ -9,4 +9,61 @@ body{
 } */
 .content-box{
   display: flex;
+  padding: 40px;
+  margin: 10px auto 10px auto;
+  border-top: solid gray 1px;
+  width: 80%;
+}
+.TextBox{
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Centers the content vertically */
+  justify-content: center; /* Centers the content horizontally */
+}
+.ImageBox {
+  width: 50%;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;           /* Establish this container as a flex container */
+  align-items: center;     /* Centers the content vertically */
+  justify-content: center; /* Centers the content horizontally */
+}
+#bigimage{
+  width: 100%;
+}
+.BigFrontImage{
+  overflow: hidden;
+  height: 400px;
+  color: white;
+}
+.BigFrontImage h1{
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  font-size: 80px;
+}
+#imageshowcase{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #030021;
+  border: solid white  1px;
+  color: white;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+#button:hover{
+  background-color: white;
+  color: #030021;
 }

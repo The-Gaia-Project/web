@@ -12,16 +12,16 @@ export default function Header ()  {
                 </div>
                 <div className='DevLog'>
                     <div className='spacing'>
-                        <Link to='devlog-hud' id='Link'>DevLog</Link>
+                        <Link to='./pages/devlog' id='Link'>DevLog</Link>
                     </div>
                     <div className='spacing'>
-                        <Link to='progress-update-hud' id='Link'>Progress Update</Link>
+                        <Link to='./pages/progress-update' id='Link'>Progress Update</Link>
                     </div>
                     <div className='spacing'>
-                        <Link to='projects-hud' id='Link'>Projects</Link>
+                        <Link to='./pages/projectshub' id='Link'>Projects</Link>
                     </div>
                     <div className='spacing'>
-                        <Link to='art-hud' id='Link'>Art</Link>
+                        <Link to='./pages/ArtHub' id='Link'>Art</Link>
                     </div>
                     <div className='spacing'>
                         <Link to='about' id='Link'>About</Link>
