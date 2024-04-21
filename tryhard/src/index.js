@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 // header and footer
 import Footer from './Routings/footer';
 import Header from './Routings/header';
+import WorkInProgrss from './Routings/WorkInProgrss';
 // all sites
 import App from './App';
 import DevLog from './Pages/devlog';
@@ -25,8 +26,9 @@ root.render(
       <Route path="/Pages/devlog" element={<DevLog />} />
       <Route path="/Pages/progress-update" element={<ProgressUpdate />} />
       <Route path="/Pages/projectshub" element={<Projects />} />
-      <Route path="/pages/arthub" element={<Art />} />
+      <Route path="/pages/arthub" element={<Art />} />WorkInProgrss
       <Route path="/Pages/about" element={<About />} />
+      <Route path="/routings/WorkInProgrss" element={<WorkInProgrss />} />
     </Routes>
   </BrowserRouter>
 );

@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import './App.css';
-import ArtHub from './Pages/arthub';
 import Footer from './Routings/footer';
 import Header from './Routings/header';
+import WorkInProgrss from './Routings/WorkInProgrss';
 
 function App() {
   return (
     <>
+      <WorkInProgrss/>
       <Header />
         <div>
           <div className='BigFrontImage'>
@@ -14,7 +15,6 @@ function App() {
             <h1>Welcome to Archneia</h1>
             {/* <button>About</button> */}
           </div>
-          
           <div className='content-box'>
             <div className='TextBox'>
               <h2>Discover the Art of Possibility</h2>
