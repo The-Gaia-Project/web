@@ -27,9 +27,8 @@ root.render(
       <Route path="/routings/header" element={<Header />} />
       <Route path="/Pages/devlog" element={<DevLog />} />
       <Route path="/Pages/progress-update" element={<ProgressUpdate />} />
-      <Route path="/Pages/projectshub" element={<Projects />}>
-        <Route path=":projectId" element={<ProjectDetails />} />
-      </Route>
+      <Route path="/Pages/projectshub" element={<Projects />}/>
+      <Route path="/project-details" element={<ProjectDetails />} />
       <Route path="/Pages/arthub" element={<Art />} />
       <Route path="/Pages/about" element={<About />} />
       <Route path="/Routings/WorkInProgrss" element={<WorkInProgrss />} />

@@ -1,23 +1,23 @@
 [
     {
-        "id": 3,
-        "title": "Project Three",
-        "shortDescription": "This is a text for Project Three.",
-        "imageUrl": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/image3.webp",
-        "detailedInfo": "Detailed information about Project Three."
-    },
-    {
         "id": 1,
         "title": "Project One",
-        "shortDescription": "This is a text for Project One.",
-        "imageUrl": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/image1.webp",
-        "detailedInfo": "Detailed information about Project One."
+        "shortDescription": "This is a short description for Project One.",
+        "image": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/DALL%C2%B7E%202024-04-15%2010.13.43%20-%20A%20hand-drawn%20sketch%20depicting%20a%20black%20hole%2C%20using%20a%20wide%20aspect%20ratio.%20The%20image%20should%20emphasize%20the%20dramatic%20pull%20of%20gravity%2C%20with%20light%20bending%20aro.webp",
+        "details": "Detailed information about Project One..."
     },
     {
         "id": 2,
         "title": "Project Two",
-        "shortDescription": "This is a text for Project Two.",
-        "imageUrl": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/image2.webp",
-        "detailedInfo": "Detailed information about Project Two."
+        "shortDescription": "This is a short description for Project Two.",
+        "image": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/DALL%C2%B7E%202024-04-15%2010.13.43%20-%20A%20hand-drawn%20sketch%20depicting%20a%20black%20hole%2C%20using%20a%20wide%20aspect%20ratio.%20The%20image%20should%20emphasize%20the%20dramatic%20pull%20of%20gravity%2C%20with%20light%20bending%20aro.webp",
+        "details": "Detailed information about Project Two..."
+    },
+    {
+        "id": 3,
+        "title": "Project Three",
+        "shortDescription": "This is a short description for Project Three.",
+        "image": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/DALL%C2%B7E%202024-04-15%2010.13.43%20-%20A%20hand-drawn%20sketch%20depicting%20a%20black%20hole%2C%20using%20a%20wide%20aspect%20ratio.%20The%20image%20should%20emphasize%20the%20dramatic%20pull%20of%20gravity%2C%20with%20light%20bending%20aro.webp",
+        "details": "Detailed information about Project Three..."
     }
 ]
