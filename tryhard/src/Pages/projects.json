@@ -1,0 +1,23 @@
+[
+    {
+        "id": 3,
+        "title": "Project Three",
+        "shortDescription": "This is a text for Project Three.",
+        "imageUrl": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/image3.webp",
+        "detailedInfo": "Detailed information about Project Three."
+    },
+    {
+        "id": 1,
+        "title": "Project One",
+        "shortDescription": "This is a text for Project One.",
+        "imageUrl": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/image1.webp",
+        "detailedInfo": "Detailed information about Project One."
+    },
+    {
+        "id": 2,
+        "title": "Project Two",
+        "shortDescription": "This is a text for Project Two.",
+        "imageUrl": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/image2.webp",
+        "detailedInfo": "Detailed information about Project Two."
+    }
+]
