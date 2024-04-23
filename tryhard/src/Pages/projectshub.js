@@ -2,47 +2,73 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
-import WorkInProgress from '../Routings/WorkInProgrss';
 import projectsData from '../Pages/projects.json'; // Import JSON data
 import './project.css';
 
-export default function Projects () {
-    const navigate = useNavigate(); // Use useNavigate here
-    const [projects, setProjects] = useState([]);
+export default function Projects() {
+    const navigate = useNavigate();
+    const [projectRows, setProjectRows] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const rowsPerPage = 4;
 
     useEffect(() => {
-        // Sort projects by ID in ascending order and set to state
-        const sortedProjects = projectsData.sort((a, b) => a.id - b.id);
-        setProjects(sortedProjects);
+        // Sort projects by ID in descending order
+        const sortedProjects = projectsData.sort((a, b) => b.id - a.id);
+        // Group projects into rows of 3
+        const rows = [];
+        for (let i = 0; i < sortedProjects.length; i += 3) {
+            rows.push(sortedProjects.slice(i, i + 3));
+        }
+        setProjectRows(rows);
     }, []);
 
+    const totalPages = Math.ceil(projectRows.length / rowsPerPage);
+
     // Handle click to redirect to project details
-    const handleProjectClick = (details) => {
-        // Navigate to the details page, passing state
-        navigate('/project-details', { state: { details } });
+    const handleProjectClick = (project) => {
+        console.log("Navigating with project:", project);  // Check what is being passed
+        navigate('/project-details', { state: { details: project } });
+    };
+    
+
+    // Pagination handlers
+    const goToNextPage = () => {
+        setCurrentPage(currentPage + 1);
     };
 
+    const goToPreviousPage = () => {
+        setCurrentPage(currentPage - 1);
+    };
 
-    return(
+    return (
         <>
-            <WorkInProgress />
             <Header />
-            <div className='row'>
-                {projects.map(project => (
-                    <div key={project.id} className='projectcontainer' onClick={() => handleProjectClick(project.details)}>
-                        <div className='projectbox'>
-                            <div className='imagebox'>
-                                <img src={project.image} alt={project.title} id='previewimage' />
+            {projectRows.slice((currentPage - 1) * rowsPerPage, currentPage * rowsPerPage).map((row, index) => (
+                <div className='row' key={index}>
+                    {row.map(project => (
+                        <div key={project.id} className='projectcontainer' onClick={() => handleProjectClick(project.details)}>
+                            <div className='projectbox'>
+                                <div className='imagebox'>
+                                    <img src={project.image} alt={project.title} id='previewimage' />
+                                </div>
+                            </div>
+                            <div>
+                                <h2>{project.title}</h2>
+                                <p>{project.shortDescription}</p>
                             </div>
                         </div>
-                        <div>
-                            <h2>{project.title}</h2>
-                            <p>{project.shortDescription}</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
+            ))}
+            <div className="pagination">
+                {currentPage > 1 && (
+                    <button onClick={goToPreviousPage}>Previous</button>
+                )}
+                {currentPage < totalPages && (
+                    <button onClick={goToNextPage}>Next</button>
+                )}
             </div>
             <Footer />
         </>
-    )
+    );
 }
