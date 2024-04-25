@@ -42,3 +42,29 @@ footer{
     text-align: end;
     width: 30%;
 }
+
+@media (max-width: 768px) {
+    .footbox_sosals{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #DownBad{
+        height: 70px; /* Adjust size as needed */
+    }
+    .sosals_image{
+        width: 30px; /* Adjust size as needed */
+        height: 30px; /* Adjust size as needed */
+    }
+    #footbox{
+        margin: auto;
+        text-align: center;
+        width: 80%;
+        justify-content: center;
+    }
+
+}

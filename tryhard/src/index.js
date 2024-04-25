@@ -6,16 +6,23 @@ import reportWebVitals from './reportWebVitals';
 // Header and Footer
 import Footer from './Routings/footer';
 import Header from './Routings/header';
-import WorkInProgrss from './Routings/WorkInProgrss';
 // All sites
 import App from './App';
-import DevLog from './Pages/devlog';
-import ProgressUpdate from './Pages/progress-update';
+//DevLog
+import DevLog from './Pages/DevLog';
+import DevLogDetails from './Pages/DevLogDetails';
+//ProgressUpdate
+import ProgressUpdate from './Pages/ProgressUpdate';
+import ProgressUpdateDetails from './Pages/ProgressUpdateDetails';
+//Projects
 import Projects from './Pages/projectshub';
-import ProjectDetails from './Pages/ProjectDetails'; // Make sure to create this component
+import ProjectDetails from './Pages/ProjectDetails';
+//art
 import Art from './Pages/arthub';
+import ArtDetails from './Pages/art-details';
+//about
 import About from './Pages/about';
-
+//css
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,10 +35,12 @@ root.render(
       <Route path="/Pages/devlog" element={<DevLog />} />
       <Route path="/Pages/progress-update" element={<ProgressUpdate />} />
       <Route path="/Pages/projectshub" element={<Projects />}/>
-      <Route path="/project-details" element={<ProjectDetails />} />
+      <Route path="/ProjectDetails" element={<ProjectDetails />} />
+      <Route path="/art-details" element={<ArtDetails />} />
+      <Route path="/ProgressUpdateDetails" element={<ProgressUpdateDetails />} />
+      <Route path="/DevLogDetails" element={<DevLogDetails />} />
       <Route path="/Pages/arthub" element={<Art />} />
       <Route path="/Pages/about" element={<About />} />
-      <Route path="/Routings/WorkInProgrss" element={<WorkInProgrss />} />
     </Routes>
   </BrowserRouter>
 );

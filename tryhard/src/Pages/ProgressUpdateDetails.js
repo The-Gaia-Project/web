@@ -1,11 +1,8 @@
 import { useLocation } from 'react-router-dom';
-
-import './css/project.css'
+import './css/ProgressUpdate.css'
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
-export default function ProjectDetails() {
-    
-
+export default function ProgressUpdateDetails() {
     const location = useLocation();
     console.log("Received state:", location.state);  // Check the received state
 
@@ -19,12 +16,12 @@ export default function ProjectDetails() {
     <>
         <Header />
         <div>
-            <h1 id='ProjectDetailsH1'>Project Details</h1>
+            <h1 id='ProgressUpdateDetailsH1'>ProgressUpdate Details</h1>
             {content.map((item, index) => (
                 item.type === 'text' ? (
-                    <p key={index} id='ProjectDetailsP'>{item.value}</p>
+                    <p key={index} id='ProgressUpdateDetailsP'>{item.value}</p>
                 ) : (
-                    <img key={index} src={item.value} alt={`Detail ${index}`} id='ProjectDetailsImg'/>
+                    <img key={index} src={item.value} alt={`Detail ${index}`} id='ProgressUpdateDetailsImg'/>
                 )
             ))}
         </div>

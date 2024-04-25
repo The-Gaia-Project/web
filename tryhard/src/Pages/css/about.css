@@ -1,0 +1,23 @@
+.titlebar{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: solid wheat 1px;
+
+}
+#AboutImage{
+    width: 100%;
+}
+.RowBoxForAbout{
+    display: flex;
+    margin: 25px;
+}
+p{
+    font-size: large;
+}
+@media (max-width: 768px) {
+    .RowBoxForAbout{
+        display: flex;
+        flex-direction: column;
+    }
+}

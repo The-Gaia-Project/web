@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
-import projectsData from '../Pages/projects.json'; // Import JSON data
-import './project.css';
+import projectsData from '../Pages/json/projects.json'; // Import JSON data
+import './css/project.css';
 
 export default function Projects() {
     const navigate = useNavigate();
@@ -27,7 +27,7 @@ export default function Projects() {
     // Handle click to redirect to project details
     const handleProjectClick = (project) => {
         console.log("Navigating with project:", project);  // Check what is being passed
-        navigate('/project-details', { state: { details: project } });
+        navigate('/ProjectDetails', { state: { details: project } });
     };
     
 
@@ -40,13 +40,17 @@ export default function Projects() {
         setCurrentPage(currentPage - 1);
     };
 
+    useEffect(() => {
+        document.title = "Arachneia - Projects";
+      }, []);
+      
     return (
         <>
             <Header />
             {projectRows.slice((currentPage - 1) * rowsPerPage, currentPage * rowsPerPage).map((row, index) => (
                 <div className='row' key={index}>
                     {row.map(project => (
-                        <div key={project.id} className='projectcontainer' onClick={() => handleProjectClick(project.details)}>
+                        <div key={project.id} className='projectcontainer' onClick={() => handleProjectClick(project)}>
                             <div className='projectbox'>
                                 <div className='imagebox'>
                                     <img src={project.image} alt={project.title} id='previewimage' />
@@ -55,6 +59,7 @@ export default function Projects() {
                             <div>
                                 <h2>{project.title}</h2>
                                 <p>{project.shortDescription}</p>
+                                <p>{project.date}</p>
                             </div>
                         </div>
                     ))}

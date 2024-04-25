@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "First DevLog",
+        "shortDescription": "This is the first log on this website.",
+        "date": "25.04.2024",
+        "image": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/DALL%C2%B7E%202024-04-15%2010.13.43%20-%20A%20hand-drawn%20sketch%20depicting%20a%20black%20hole%2C%20using%20a%20wide%20aspect%20ratio.%20The%20image%20should%20emphasize%20the%20dramatic%20pull%20of%20gravity%2C%20with%20light%20bending%20aro.webp",
+        "content": [
+            { "type": "text", "value": "This is my first ever log on my website. this log is about the website its self." },
+            { "type": "text", "value": "I have made this website over a week. i first made a sketch of how i wanted my website to look." },
+            { "type": "text", "value": "I made a new logo that fits my style, and i even bouth the arachneia.com domain on squerespace and i designd the website thair, but it cost 200nok or 20usd a month to have a squerespace to host the website." },
+            { "type": "text", "value": "So i programd it myself from scrath." },
+            { "type": "image", "value": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/DALL%C2%B7E%202024-04-15%2010.13.43%20-%20A%20hand-drawn%20sketch%20depicting%20a%20black%20hole%2C%20using%20a%20wide%20aspect%20ratio.%20The%20image%20should%20emphasize%20the%20dramatic%20pull%20of%20gravity%2C%20with%20light%20bending%20aro.webp" },
+            { "type": "text", "value": "the image above is of my sketch for my website." }
+        ]
+    }
+]

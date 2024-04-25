@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Project 1",
+        "shortDescription": "This is a short description for Project One.",
+        "date": "00.00.0000",
+        "image": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/DALL%C2%B7E%202024-04-15%2010.13.43%20-%20A%20hand-drawn%20sketch%20depicting%20a%20black%20hole%2C%20using%20a%20wide%20aspect%20ratio.%20The%20image%20should%20emphasize%20the%20dramatic%20pull%20of%20gravity%2C%20with%20light%20bending%20aro.webp",
+        "content": [
+            { "type": "text", "value": "Detailed text about Project One..." },
+            { "type": "image", "value": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/DALL%C2%B7E%202024-04-15%2010.13.43%20-%20A%20hand-drawn%20sketch%20depicting%20a%20black%20hole%2C%20using%20a%20wide%20aspect%20ratio.%20The%20image%20should%20emphasize%20the%20dramatic%20pull%20of%20gravity%2C%20with%20light%20bending%20aro.webp" },
+            { "type": "text", "value": "More detailed text following an image..." },
+            { "type": "image", "value": "https://raw.githubusercontent.com/GaiaAlfine/Images/main/DALL%C2%B7E%202024-04-15%2010.13.43%20-%20A%20hand-drawn%20sketch%20depicting%20a%20black%20hole%2C%20using%20a%20wide%20aspect%20ratio.%20The%20image%20should%20emphasize%20the%20dramatic%20pull%20of%20gravity%2C%20with%20light%20bending%20aro.webp" },
+            { "type": "text", "value": "More detailed text following an image..." }
+        ]
+    }
+]

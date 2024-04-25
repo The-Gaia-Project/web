@@ -1,11 +1,8 @@
 import { useLocation } from 'react-router-dom';
-
-import './css/project.css'
+import './css/DevLog.css'
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
-export default function ProjectDetails() {
-    
-
+export default function DevlogDetails() {
     const location = useLocation();
     console.log("Received state:", location.state);  // Check the received state
 
@@ -14,17 +11,17 @@ export default function ProjectDetails() {
     if (!content) {
         return <div>No details available</div>;
     }
-    
+
     return (
     <>
         <Header />
         <div>
-            <h1 id='ProjectDetailsH1'>Project Details</h1>
+            <h1 id='devlogDetailsH1'>devlog Details</h1>
             {content.map((item, index) => (
                 item.type === 'text' ? (
-                    <p key={index} id='ProjectDetailsP'>{item.value}</p>
+                    <p key={index} id='devlogDetailsP'>{item.value}</p>
                 ) : (
-                    <img key={index} src={item.value} alt={`Detail ${index}`} id='ProjectDetailsImg'/>
+                    <img key={index} src={item.value} alt={`Detail ${index}`} id='devlogDetailsImg'/>
                 )
             ))}
         </div>

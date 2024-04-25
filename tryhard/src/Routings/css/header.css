@@ -60,3 +60,31 @@ header{
 .spacing{
     padding: 10px;
 }
+.workinporgress{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    color: red;
+}
+.workinporgress h2{
+    margin: 10px;
+}
+@media (max-width: 768px) {
+    header{
+        height: 100px;
+    }
+    .logobox{
+        margin: auto 1px auto 1px;
+    }
+    #DownBad{
+        height: 50px;
+    }
+    .DevLog{
+        display: none;
+        
+    }
+}

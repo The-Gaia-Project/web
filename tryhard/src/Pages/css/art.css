@@ -2,11 +2,11 @@
     padding: 10px;
     display: flex;
 }
-.projectcontainer{
+.artcontainer{
     overflow: hidden;
     margin: auto;
 }
-.projectbox{
+.artbox{
     overflow: hidden;
     margin: auto;
     border: solid gray 1px;
@@ -15,7 +15,7 @@
     border-radius: 25px;
     transition: 0.3s;
 }
-.projectbox:hover{
+.artbox:hover{
     border: solid white 1px;
 }
 .imagebox{
@@ -30,4 +30,29 @@
 #previewimage{
     height: 400px;
     transition: 0.3s;
+}
+/* artDetails */
+#artDetailsH1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+#artDetailsP{
+    display: flex;
+    justify-content: center;
+}
+#artDetailsImg{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+@media (max-width: 768px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .artbox{
+        width: 20rem;
+        height: 20rem;    
+    }
 }

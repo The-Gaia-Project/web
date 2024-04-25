@@ -2,11 +2,9 @@ body{
   background-color: #030021;
   color: white;
 }
-/* div{
-  border: solid wheat 1px;
-  margin: 10px;
-  padding: 10px;
-} */
+div, h1, h2, p, img, button{
+  transition: 0.3s;
+}
 .content-box{
   display: flex;
   padding: 40px;
@@ -19,16 +17,16 @@ body{
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;     /* Centers the content vertically */
-  justify-content: center; /* Centers the content horizontally */
+  align-items: center;     
+  justify-content: center; 
 }
 .ImageBox {
   width: 50%;
   padding: 10px;
   overflow: hidden;
-  display: flex;           /* Establish this container as a flex container */
-  align-items: center;     /* Centers the content vertically */
-  justify-content: center; /* Centers the content horizontally */
+  display: flex;           
+  align-items: center;     
+  justify-content: center; 
 }
 #bigimage{
   width: 100%;
@@ -66,4 +64,35 @@ body{
 #button:hover{
   background-color: white;
   color: #030021;
+}
+@media (max-width: 768px) {
+  .BigFrontImage h1{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    font-size: 200%;
+  }
+  .BigFrontImage{
+    height: auto;
+  }
+  .content-box{
+    margin: 10px;
+    width: auto;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-box, .TextBox, .ImageBox {
+    flex-direction: column; /* Horizontal layout for larger screens */
+  }
+
+  .TextBox, .ImageBox {
+    width: 100%; /* Half width for desktop */
+    margin: auto;
+    padding: 0%;
+  }
+  .ImageBox{
+    height: 200px;
+  }
+
 }
