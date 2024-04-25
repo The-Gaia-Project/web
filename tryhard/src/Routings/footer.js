@@ -9,15 +9,15 @@ export default function Footer ()  {
             <footer>
                 <div className='logobox' id='footbox'>
                     <Link to='/'>
-                        <img src= {Logo} alt='' id='DownBad'/>
+                        <img src= {Logo} alt='logo' id='DownBad'/>
                     </Link>
                 </div>
                     <div className='footbox_sosals'>
                         <div className='sosals_image'>
-                            <img src={TwitterLogo} alt='x' id='sosalmedia'/>
+                        <a href="https://twitter.com/Archneia_" target="_blank" rel="noopener noreferrer"><img src={TwitterLogo} alt='x' id='sosalmedia'/></a>
                         </div>
                         <div className='sosals_image'>
-                            <img src={GithubLogo} alt='github' id='sosalmedia'/>
+                        <a href="https://github.com/arachneia" target="_blank" rel="noopener noreferrer"><img src={GithubLogo} alt='github' id='sosalmedia'/></a>
                         </div>
                     </div>
                 <div className='contacts' id='footbox'>

@@ -23,13 +23,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .imagebox:hover #previewimage{
-    height: 410px;
+    height: 120%;
+    width: 120%;
 }
 #previewimage{
-    height: 400px;
+    height: 100%;
     transition: 0.3s;
+    width: 100%;
 }
 /* devlogDetails */
 #devlogDetailsH1{
@@ -45,6 +48,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    width: 80%;
 }
 @media (max-width: 768px) {
     .row{
