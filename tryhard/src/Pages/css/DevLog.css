@@ -27,12 +27,12 @@
 }
 .imagebox:hover #previewimage{
     height: 120%;
-    width: 120%;
+    /* width: 120%; */
 }
 #previewimage{
     height: 100%;
     transition: 0.3s;
-    width: 100%;
+    /* width: 100%; */
 }
 /* devlogDetails */
 #devlogDetailsH1{

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
-import devlogsData from '../Pages/json/DevLog.json'; // Import JSON data
+import devlogsData from './json/DevLog.json'; // Import JSON data
 import './css/DevLog.css';
 
 export default function DevLog() {

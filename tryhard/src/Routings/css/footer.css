@@ -6,17 +6,17 @@ footer{
 }
 .logobox{
     width: 70%;
-    margin: auto 10px auto 10px;
+    margin:  10px auto 10px;
 }
 .footbox_sosals{
     margin: auto 10px auto 10px;
 }
-#DownBad{
-    height: 100px;
+#FootDownBad{
+    height: 50px;
     opacity: 80%;
     transition: 0.3s;
 }
-#DownBad:hover{
+#FootDownBad:hover{
     opacity: 100%;
 }
 .sosals_image{

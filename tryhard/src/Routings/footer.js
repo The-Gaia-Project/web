@@ -9,7 +9,7 @@ export default function Footer ()  {
             <footer>
                 <div className='logobox' id='footbox'>
                     <Link to='/'>
-                        <img src= {Logo} alt='logo' id='DownBad'/>
+                        <img src= {Logo} alt='logo' id='FootDownBad'/>
                     </Link>
                 </div>
                     <div className='footbox_sosals'>

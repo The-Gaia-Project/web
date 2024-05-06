@@ -1,7 +1,7 @@
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
 import './css/about.css'
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 export default function About () {
 
     useEffect(() => {
