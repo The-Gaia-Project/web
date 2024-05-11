@@ -56,7 +56,7 @@ export default function Projects() {
                                     <img src={project.image} alt={project.title} id='previewimage' />
                                 </div>
                             </div>
-                            <div>
+                            <div className='TextBox'>
                                 <h2>{project.title}</h2>
                                 <p>{project.shortDescription}</p>
                                 <p>{project.date}</p>
