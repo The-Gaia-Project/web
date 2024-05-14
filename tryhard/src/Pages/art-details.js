@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import './css/art.css'
+import './css/Pages.css'
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
 export default function ArtDetails() {
@@ -16,12 +16,12 @@ export default function ArtDetails() {
     <>
         <Header />
         <div>
-            <h1 id='artDetailsH1'>Art Details</h1>
+            <h1 id='PagesDetailsH1'>Art Details</h1>
             {content.map((item, index) => (
                 item.type === 'text' ? (
-                    <p key={index} id='artDetailsP'>{item.value}</p>
+                    <p key={index} id='PagesDetailsP'>{item.value}</p>
                 ) : (
-                    <img key={index} src={item.value} alt={`Detail ${index}`} id='artDetailsImg'/>
+                    <img key={index} src={item.value} alt={`Detail ${index}`} id='PagesDetailsImg'/>
                 )
             ))}
         </div>

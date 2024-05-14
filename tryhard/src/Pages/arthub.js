@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
 import artsData from '../Pages/json/Art.json'; // Import JSON data
-import './css/art.css';
+import './css/Pages.css';
 
 export default function ArtHub() {
     const navigate = useNavigate();
@@ -16,8 +16,8 @@ export default function ArtHub() {
         const sortedarts = artsData.sort((a, b) => b.id - a.id);
         // Group arts into rows of 3
         const rows = [];
-        for (let i = 0; i < sortedarts.length; i += 3) {
-            rows.push(sortedarts.slice(i, i + 3));
+        for (let i = 0; i < sortedarts.length; i += 4) {
+            rows.push(sortedarts.slice(i, i + 4));
         }
         setartRows(rows);
     }, []);
@@ -50,8 +50,8 @@ export default function ArtHub() {
             {artRows.slice((currentPage - 1) * rowsPerPage, currentPage * rowsPerPage).map((row, index) => (
                 <div className='row' key={index}>
                     {row.map(art => (
-                        <div key={art.id} className='artcontainer' onClick={() => handleartClick(art)}>
-                            <div className='artbox'>
+                        <div key={art.id} className='Pagescontainer' onClick={() => handleartClick(art)}>
+                            <div className='Pagesbox'>
                                 <div className='imagebox'>
                                     <img src={art.image} alt={art.title} id='previewimage' />
                                 </div>
@@ -67,10 +67,10 @@ export default function ArtHub() {
             ))}
             <div className="pagination">
                 {currentPage > 1 && (
-                    <button onClick={goToPreviousPage}>Previous</button>
+                    <button onClick={goToPreviousPage} id='NextButtonForContent'>Previous</button>
                 )}
                 {currentPage < totalPages && (
-                    <button onClick={goToNextPage}>Next</button>
+                    <button onClick={goToNextPage} id='NextButtonForContent'>Next</button>
                 )}
             </div>
             <Footer />

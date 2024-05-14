@@ -2,7 +2,7 @@
     padding: 10px;
     display: flex;
 }
-.projectcontainer{
+.Pagescontainer{
     padding-top: 20px;
     width: 450px;
     margin: auto;
@@ -12,17 +12,17 @@
     text-align: center;
     border: solid gray 1px;
     border-radius: 25px;
+    transition: 0.3s;
 }
-.projectcontainer:hover{
+.Pagescontainer:hover{
     scale: 101%;
-    /* border: solid white 1px; */
-    background-color: #00000050;
+    background-color: #000000;
 }
 .TextBox{
     align-self: center;
     width: 90%;
 }
-.projectbox{
+.Pagesbox{
     align-self: center;
     overflow: hidden;
     border: solid gray 1px;
@@ -41,29 +41,50 @@
     height: 400px;
     transition: 0.3s;
 }
-
-/* ProjectDetails */
-#ProjectDetailsH1{
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#NextButtonForContent{
+    border: solid gray 1px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    height: 45px;
+    width: 65px;
+    transition: 0.3s;
+    margin: 10px;
+}
+#NextButtonForContent:hover{
+    scale: 105%;
+    background-color: #000000;
+}
+/* PagesDetails */
+#PagesDetailsH1{
     display: flex;
     justify-content: center;
     font-size: xx-large;
 }
-#ProjectDetailsP{
+#PagesDetailsP{
     display: flex;
     justify-content: center;
 }
-#ProjectDetailsImg{
+#PagesDetailsImg{
     display: flex;
     justify-content: center;
     margin: auto;
     width: 80%;
 }
 @media (max-width: 768px) {
+    .Pagescontainer{
+        margin-top: 10px;
+    }
     .row{
         display: flex;
         flex-direction: column;
     }
-    .projectbox{
+    .Pagesbox{
         width: 20rem;
         height: 20rem;    
     }

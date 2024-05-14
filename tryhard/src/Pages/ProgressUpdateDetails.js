@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import './css/ProgressUpdate.css'
+import './css/Pages.css'
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
 export default function ProgressUpdateDetails() {
@@ -16,12 +16,12 @@ export default function ProgressUpdateDetails() {
     <>
         <Header />
         <div>
-            <h1 id='ProgressUpdateDetailsH1'>ProgressUpdate Details</h1>
+            <h1 id='PagesDetailsH1'>ProgressUpdate Details</h1>
             {content.map((item, index) => (
                 item.type === 'text' ? (
-                    <p key={index} id='ProgressUpdateDetailsP'>{item.value}</p>
+                    <p key={index} id='PagesDetailsP'>{item.value}</p>
                 ) : (
-                    <img key={index} src={item.value} alt={`Detail ${index}`} id='ProgressUpdateDetailsImg'/>
+                    <img key={index} src={item.value} alt={`Detail ${index}`} id='PagesDetailsImg'/>
                 )
             ))}
         </div>

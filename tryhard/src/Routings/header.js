@@ -1,22 +1,26 @@
 import './css/header.css';
 import Logo from '../Logos/logo.png';
 import { Link } from 'react-router-dom';
-export default function Header ()  {
-    return(
+import { useState, useEffect } from 'react';
+
+export default function Header () {
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+
+    useEffect(() => {
+        document.body.className = theme;
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+    };
+
+    return (
         <>
-        {/* <div className='workinporgress'>
-            <h2>// Work in progress</h2>
-            <h2>// Work in progress</h2>
-            <h2>// Work in progress</h2>
-            <h2>// Work in progress</h2>
-            <h2>// Work in progress</h2>
-            <h2>// Work in progress</h2>
-            <h2>// Work in progress</h2>
-        </div> */}
             <header>
                 <div className='logobox' id='footbox'>
                     <Link to='/'>
-                        <img src= {Logo} alt='' id='DownBad'/>
+                        <img src={Logo} alt='' id='DownBad' />
                     </Link>
                 </div>
                 <div className='DevLog'>
@@ -36,7 +40,10 @@ export default function Header ()  {
                         <Link to='../pages/about' id='Link'>About</Link>
                     </div>
                 </div>
+                {/* <button onClick={toggleTheme} className='theme-toggle-button'>
+                    {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+                </button> */}
             </header>
         </>
-    )
+    );
 }

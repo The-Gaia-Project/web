@@ -1,10 +1,25 @@
 header{
     border-bottom: solid gray 1px;
-    background-color: #030021;
     display: flex;
     color: white;
     height: 150px;
 }
+.theme-toggle-button {
+    margin-left: auto;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-button:hover {
+    background-color: var(--button-bg-hover);
+    color: var(--button-text-hover);
+}
+
 .logobox{
     width: 70%;
     margin: auto 10px auto 10px;
@@ -59,16 +74,6 @@ header{
 }
 .spacing{
     padding: 10px;
-}
-.workinporgress{
-    display: flex;
-    margin: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: black;
-    color: red;
 }
 .workinporgress h2{
     margin: 10px;

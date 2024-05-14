@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import './css/DevLog.css'
+import './css/Pages.css'
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
 export default function DevlogDetails() {
@@ -16,12 +16,12 @@ export default function DevlogDetails() {
     <>
         <Header />
         <div>
-            <h1 id='devlogDetailsH1'>devlog Details</h1>
+            <h1 id='PagesDetailsH1'>devlog Details</h1>
             {content.map((item, index) => (
                 item.type === 'text' ? (
-                    <p key={index} id='devlogDetailsP'>{item.value}</p>
+                    <p key={index} id='PagesDetailsP'>{item.value}</p>
                 ) : (
-                    <img key={index} src={item.value} alt={`Detail ${index}`} id='devlogDetailsImg'/>
+                    <img key={index} src={item.value} alt={`Detail ${index}`} id='PagesDetailsImg'/>
                 )
             ))}
         </div>

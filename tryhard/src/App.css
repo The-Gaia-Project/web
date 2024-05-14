@@ -1,6 +1,23 @@
-body{
-  background-color: #030021;
-  color: white;
+:root {
+  --background-dark: #030021;
+  --text-dark: white;
+  --background-light: white;
+  --text-light: black;
+  --button-bg: #030021;
+  --button-text: white;
+  --button-bg-hover: white;
+  --button-text-hover: #030021;
+}
+
+body {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: var(--background-light);
+  color: var(--text-light);
 }
 .content-box{
   display: flex;

@@ -1,6 +1,5 @@
 footer{
     border-top: solid gray 1px;
-    background-color: #030021;
     display: flex;
     color: white;
 }
@@ -18,6 +17,9 @@ footer{
 }
 #FootDownBad:hover{
     opacity: 100%;
+}
+.footbox_sosals{
+    display: flex;
 }
 .sosals_image{
     margin: 10px;

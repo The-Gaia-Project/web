@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../Routings/header';
 import Footer from '../Routings/footer';
 import ProgressUpdatesData from '../Pages/json/ProgressUpdate.json'; // Import JSON data
-import './css/ProgressUpdate.css';
+import './css/Pages.css';
 
 export default function ProgressUpdate() {
     const navigate = useNavigate();
@@ -50,8 +50,8 @@ export default function ProgressUpdate() {
             {ProgressUpdateRows.slice((currentPage - 1) * rowsPerPage, currentPage * rowsPerPage).map((row, index) => (
                 <div className='row' key={index}>
                     {row.map(ProgressUpdate => (
-                        <div key={ProgressUpdate.id} className='ProgressUpdatecontainer' onClick={() => handleProgressUpdateClick(ProgressUpdate)}>
-                            <div className='ProgressUpdatebox'>
+                        <div key={ProgressUpdate.id} className='Pagescontainer' onClick={() => handleProgressUpdateClick(ProgressUpdate)}>
+                            <div className='Pagesbox'>
                                 <div className='imagebox'>
                                     <img src={ProgressUpdate.image} alt={ProgressUpdate.title} id='previewimage' />
                                 </div>
@@ -67,10 +67,10 @@ export default function ProgressUpdate() {
             ))}
             <div className="pagination">
                 {currentPage > 1 && (
-                    <button onClick={goToPreviousPage}>Previous</button>
+                    <button onClick={goToPreviousPage} id='NextButtonForContent'>Previous</button>
                 )}
                 {currentPage < totalPages && (
-                    <button onClick={goToNextPage}>Next</button>
+                    <button onClick={goToNextPage} id='NextButtonForContent'>Next</button>
                 )}
             </div>
             <Footer />
