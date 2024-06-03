@@ -2,6 +2,7 @@ import './css/header.css';
 import Logo from '../Logos/logo.png';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import Favs from './Favorits';
 
 export default function Header () {
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
@@ -44,6 +45,7 @@ export default function Header () {
                     {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
                 </button> */}
             </header>
+            <Favs/>
         </>
     );
 }

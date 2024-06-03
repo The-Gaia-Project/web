@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+
+import HiddenPage from './Pages/HiddenPage';
 // Header and Footer
 import Footer from './Routings/footer';
 import Header from './Routings/header';
@@ -41,6 +43,7 @@ root.render(
       <Route path="/DevLogDetails" element={<DevLogDetails />} />
       <Route path="/Pages/arthub" element={<Art />} />
       <Route path="/Pages/about" element={<About />} />
+      <Route path="/Pages/HiddenPage" element={<HiddenPage />} />
     </Routes>
   </BrowserRouter>
 );

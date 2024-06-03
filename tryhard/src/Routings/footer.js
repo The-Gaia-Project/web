@@ -23,6 +23,7 @@ export default function Footer ()  {
                 <div className='contacts' id='footbox'>
                     <h2>contacts</h2>
                     <p>Gaia@arachneia.com</p>
+                    <p>support@arachneia.com</p>
                 </div>
             </footer>
         </>

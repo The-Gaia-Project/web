@@ -1,0 +1,23 @@
+#Favs{
+    border: solid gray 1px;
+    width: 25%;
+    margin: 10px 5% 10px 5%;    
+    border-radius: 25px;
+    transition: 0.3s;
+}
+#Favs:hover{
+    scale: 102%;
+    background-color: black;
+}
+#Favs h2{
+    font-size: x-large;
+    padding-left: 10px;
+}
+#Favs a{
+    color: white;
+}
+#HolderBox{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

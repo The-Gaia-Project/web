@@ -26,6 +26,24 @@ body.light {
   border-top: solid gray 1px;
   width: 80%;
 }
+.Arachneia-Script-Host{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 10px auto 10px auto;
+  border-top: solid gray 1px;
+  width: 80%;
+}
+.Arachneia-Script-Host h2{
+  font-size: xxx-large;
+}
+.Arachneia-Script-Host a{
+  font-size: xx-large;
+  color: white;
+}
+.Arachneia-Script-Host button{
+  margin-top: 10px;
+}
 .TextBox{
   width: 50%;
   padding: 10px;
